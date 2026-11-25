@@ -7,20 +7,28 @@ packaged Anki deck. To export, click the File menu and choose **Export**.
 
 ## Text Files
 
+### Notes in Plain Text
+
 If you choose "Notes in Plain Text", Anki will write the contents of the
 notes into a text file. Each field is separated by a tab. If you edit
 the resulting file and don't modify the first field, you can later
 import that file back into Anki and Anki will update your notes based on
 your edits, provided you import back into the same note type.
 
-If you find yourself needing to edit the first field as well, you'll
-need to change the format of your note type so that the first field is
-an ID number rather than actual text. (You can install
-the [Add note id](https://ankiweb.net/shared/info/8897764)
-add-on to make this easier.)
+If you need to edit the first field as well, enable "Include unique
+identifier" when exporting. Anki will then include each note's GUID in the
+file and use it to match the notes on import. See
+[GUID Column](../importing/text-files#guid-column) for details.
 
 In order for formatting to be preserved when you import text back in,
 the text is exported with all the HTML formatting embedded in it.
+
+### Cards in Plain Text
+
+"Cards in Plain Text" writes one row per card, with the front and back of
+each card in separate columns. It is meant for use outside Anki. If you
+want to edit your notes and bring them back into Anki, use "Notes in
+Plain Text" instead.
 
 ## Packaged Decks
 
